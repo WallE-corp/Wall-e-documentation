@@ -2,17 +2,17 @@
 
 # Requirements
 * Mower
-  - Be able to run autonomously within a confined area.
-  - Be able to avoid collision objects during autonomous operation.
-  - Be able to accept and execute drive commands given by a remote device.
-  - Shall use a camera and send images to the backend when collision avoidance occurs.
+  - [x] [🔗](#requirement-be-able-to-run-autonomously-within-a-confined-area) Be able to run autonomously within a confined area.
+  - [x] [🔗](#requirement-be-able-to-avoid-collision-objects-during-autonomous-operation) Be able to avoid collision objects during autonomous operation.
+  - [x] [🔗](#requirement-be-able-to-accept-and-execute-drive-commands-given-by-a-remote-device) Be able to accept and execute drive commands given by a remote device.
+  - [x] [🔗](#requirement-shall-use-a-camera-and-send-images-to-the-backend-when-collision-avoidance-occurs) Shall use a camera and send images to the backend when collision avoidance occurs.
 * Mobile
-  - Shall take user input and translate them to drive commands for the WallE.
-  - Shall visualize the path travelled by WallE including collision avoidance events.
+  - [x] [🔗](#shall-take-user-input-and-translate-them-to-drive-commands-for-the-walle) Shall take user input and translate them to drive commands for the WallE.
+  - [x] [🔗](#shall-visualize-the-path-travelled-by-walle-including-collision-avoidance-events) Shall visualize the path travelled by WallE including collision avoidance events.
 * Backend
-  - Publish REST API for reading and writing position data from WallE.
-  - REST API shall contain a service for reading and writing image data.
-  - When image data is written, shall perform an image classification via for example Google API.
+  - [x] [🔗](#publish-rest-api-for-reading-and-writing-position-data-from-walle) Publish REST API for reading and writing position data from WallE.
+  - [x] [🔗](#rest-api-shall-contain-a-service-for-reading-and-writing-image-data) REST API shall contain a service for reading and writing image data.
+  - [x] [🔗](#when-image-data-is-written-shall-perform-an-image-classification-via-for-example-google-api) When image data is written, shall perform an image classification via for example Google API.
 
 # Contents
 * Architecture Overview
