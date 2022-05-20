@@ -8,7 +8,7 @@
   * [Backend -Raspberry](#backend---raspberry)
   * [Raspberry - Arduino](#rasbperry---arduino)
   * [Arduino - Robot](#arduino---robot)
-* [Requirements Mid-Level Breakdown]()
+* [Mid-Level Requirements Breakdown]()
 
 ## Introduction
 Introduction
@@ -40,3 +40,23 @@ Contains only what technology is used to send data between but not how that data
 ### Backend - Raspberry
 ### Rasbperry - Arduino
 ### Arduino - Robot
+
+## Mid-Level Requirements Breakdown
+Each of these breakdown what is requirement by each sub component but not exactly how it is implemented. 
+
+* > ### Requirement: Be able to run autonomously within a confined area.
+  Explain overall how it is achieved then link to implementation details
+
+  ---
+
+* > ### Requirement: Be able to avoid collision objects during autonomous operation.
+  Explain overall how it is achieved then link to implementation details
+  
+  ---
+* > ### Requirement: Be able to accept and execute drive commands given by a remote device.
+  Explain overall how it is achieved then link to implementation details
+  
+  ---
+
+* > ### Requirement: Shall use a camera and send images to the backend when collision avoidance occurs.
+  Explain overall how it is achieved then link to implementation details
