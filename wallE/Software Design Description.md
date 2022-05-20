@@ -43,28 +43,28 @@ void setup(); | This function first of initializes the serial communication betw
 ## High level requirements & Low level requirements:
 
 **1: The Mower shall be capable of running autonomously within a confined area.**
-1.1: The Arduino shall be capable of detecting when it has encountered the border line for the confined area.
-1.2: The Ardunio shall be capable of handling a border detection through a pre-determined set of moves to remain within the confined area.
+* 1.1: The Arduino shall be capable of detecting when it has encountered the border line for the confined area.
+* 1.2: The Ardunio shall be capable of handling a border detection through a pre-determined set of moves to remain within the confined area.
 
 **2: The Mower shall be able to avoid collision objects during automous operation.**
-2.1: The Arduino shall be capable of detecting when it has an object in front of it.
-2.2: The Ardunio shall be capable of handling an obstacle event through a pre-determined set of moves to avoid collision. 
+* 2.1: The Arduino shall be capable of detecting when it has an object in front of it.
+* 2.2: The Ardunio shall be capable of handling an obstacle event through a pre-determined set of moves to avoid collision. 
 
 **3: The Mower shall be able to accept and execute drive commands given by a remote device.**
-3.1: The Arduino shall be capable of receing commands from the Raspberry Pi through serial communication.
-3.2: The Arduino shall have a function for Moving Forward.
-3.3: The Arduino shall have a function for Turning Left.
-3.4: The Arduino shall have a function for Turning Right.
-3.5: The Arduino shall have a function for Reversing.
-3.2-5: The Arduino shall have functions to facilitate drive commands.
-3.6: The Arduino shall be capable of executing the command received through movement functions.
-3.7: The Raspberry Pi shall be capable of receiving commands through the socket connection.
-3.8: The Raspberry Pi shall be able to send movement commands to the Arduino through serial communication according to command received. 
+* 3.1: The Arduino shall be capable of receing commands from the Raspberry Pi through serial communication.
+* 3.2: The Arduino shall have a function for Moving Forward.
+* 3.3: The Arduino shall have a function for Turning Left.
+* 3.4: The Arduino shall have a function for Turning Right.
+* 3.5: The Arduino shall have a function for Reversing.
+* 3.2-5: The Arduino shall have functions to facilitate drive commands.
+* 3.6: The Arduino shall be capable of executing the command received through movement functions.
+* 3.7: The Raspberry Pi shall be capable of receiving commands through the socket connection.
+* 3.8: The Raspberry Pi shall be able to send movement commands to the Arduino through serial communication according to command received. 
 
 **4: The Mower shall use a camera and send images to the backend REST API when collision avoidance occurs.**
-4.1: The Arduino shall be capable of sending data through serial communication.
-4.2: The Raspberry Pi shall be capable of capturing a picture through its camera when an obstacle event occurs.
-4.3: The Raspberry Pi shall be capable of sending an obstacle event to the backend when encountered.
+* 4.1: The Arduino shall be capable of sending data through serial communication.
+* 4.2: The Raspberry Pi shall be capable of capturing a picture through its camera when an obstacle event occurs.
+* 4.3: The Raspberry Pi shall be capable of sending an obstacle event to the backend when encountered.
 
 ## Source code components for the Raspberry Pi(main file):
 
