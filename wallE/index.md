@@ -1,4 +1,4 @@
-# WallE Software Design Implementation
+# WallE Software Design Description
 
 ## Contents
 * [Introduction](#introduction)
