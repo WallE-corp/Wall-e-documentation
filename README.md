@@ -46,37 +46,38 @@ See [Mobile](mobile/index.md) for implementation details.
 This chapter lists each high level requirement and gives an overview of how it has been achieve. 
 
 ## WallE Requirments
-> ### [x] Requirement: Be able to run autonomously within a confined area.
+> ### Requirement: Be able to run autonomously within a confined area.
 Explain overall how it is achieved then link to implementation details
 
-> ### [x] Requirement: Be able to avoid collision objects during autonomous operation.
+> ### Requirement: Be able to avoid collision objects during autonomous operation.
 Explain overall how it is achieved then link to implementation details
 
-> ### [x] Requirement: Be able to accept and execute drive commands given by a remote device.
+> ### Requirement: Be able to accept and execute drive commands given by a remote device.
 Explain overall how it is achieved then link to implementation details
 
-> ### [x] Requirement: Shall use a camera and send images to the backend when collision avoidance occurs.
+> ### Requirement: Shall use a camera and send images to the backend when collision avoidance occurs.
 Explain overall how it is achieved then link to implementation details
 
 ---
 
 ## Mobile Requirements
-> ### [x] Shall take user input and translate them to drive commands for the WallE.
+> ### Shall take user input and translate them to drive commands for the WallE.
 Explain overall how it is achieved then link to implementation details
 
-> ### [x] Shall visualize the path travelled by WallE including collision avoidance events.
+> ### Shall visualize the path travelled by WallE including collision avoidance events.
 Explain overall how it is achieved then link to implementation details
 
 ---
 
 ## Backend Requirements
-> ### [x] Publish REST API for reading and writing position data from WallE.
+> ### Publish REST API for reading and writing position data from WallE.
 Explain overall how it is achieved then link to implementation details
 
 
-> ### [x] REST API shall contain a service for reading and writing image data.
+> ### REST API shall contain a service for reading and writing image data.
 Explain overall how it is achieved then link to implementation details
 
 
-> ### [x] When image data is written, shall perform an image classification via for example Google API.
+> ### When image data is written, shall perform an image classification via for example Google API.
 Explain overall how it is achieved then link to implementation details
+
