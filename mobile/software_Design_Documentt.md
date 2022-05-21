@@ -21,7 +21,7 @@ Before starting the design of the front part of the mobile app, we had to take i
   -  we also thought about showing the image we collid with (in the end we were not able to implement it in time).
  
  So with those constrain taken in account we decided to first create the design on figma (a collaborative app like google doc, to create desings).
- ![Figma](../assets/figma.png?raw=true "Figma")
+ ![Figma](assets/figma?raw=true "Figma")
  
  To answer the first two needs we decided to create a button that will activate one or the other part, and will send a message to the back end about the change of state., and decided to add a place to draw.
  
@@ -54,7 +54,8 @@ Before starting the design of the front part of the mobile app, we had to take i
     sizeMaxX = (tempHightX) - (tempLowX)
     sizeMaxY = (tempHightY) - (tempLowY)
     size1pX = sizeMaxX / 300;
-    size1pY = sizeMaxY / 400;```
+    size1pY = sizeMaxY / 400;
+    ```
 
 We also had to check if some numbers were negative as our axis to draw were only positive. If there is a negative number we will then add the obasolute value to all coordinates.
 ```    if (tempLowX < 0)
@@ -62,10 +63,12 @@ We also had to check if some numbers were negative as our axis to draw were only
     if (tempLowY < 0)
       makePosY += (-1) * tempLowY```
       ```      x2 = ((element.x + makePosX) / size1pX);
-      y2 = ((element.y + makePosY) / size1pY);```
+      y2 = ((element.y + makePosY) / size1pY);
+ ```
       
       We then draw thanks to a library call svg and create an array of lines, that we then draw.
-```temp.push(<Line x1={x1} y1={y1.toString()} x2={x2.toString()} y2={y2.toString()} stroke="red" strokeWidth="2" />);```
+```temp.push(<Line x1={x1} y1={y1.toString()} x2={x2.toString()} y2={y2.toString()} stroke="red" strokeWidth="2" />);
+```
 
 To receive all those data, we use a socket connexion and created and infinite loop that call the back-end road to get the points every 0.5 seconds.
 ```const getPathpoints = () => {
@@ -84,11 +87,14 @@ To receive all those data, we use a socket connexion and created and infinite lo
       .catch(err => {
         console.log(err);
       });
-  }```
+  }
+  ```
 
-To draw the obstacles we are in the same function as the one drawing the path as we apply the same multiplying factor to make the coordinates adapt to the size of the map, and we draw thanks to the circle option of the svg library ```cx = (element[0] + makePosX) / size1pX
+To draw the obstacles we are in the same function as the one drawing the path as we apply the same multiplying factor to make the coordinates adapt to the size of the map, and we draw thanks to the circle option of the svg library
+```cx = (element[0] + makePosX) / size1pX
         cy = (element[1] + makePosY) / size1pY
-        temp1.push(<Circle cx={cx.toString()} cy={cy.toString()} r="5" stroke="black" strokeWidth="2" />);```
+        temp1.push(<Circle cx={cx.toString()} cy={cy.toString()} r="5" stroke="black" strokeWidth="2" />);
+        ```
         
 We get the obstacles via a socket call that the back end sends.
 
@@ -97,7 +103,8 @@ We get the obstacles via a socket call that the back end sends.
 To do the manual control we create four buttons, that are activated or not depending on the mode.
 When pressed we call a function that sends a message via socket to the back end. On first press it sends start, on second press stop.
 Here is the function to turn left 
-```nst Left = () => {
+```
+const Left = () => {
     if (leftState == false) {
       const data = {
         "type": 4,
@@ -121,4 +128,5 @@ Here is the function to turn left
       socket.emit('message', JSON.stringify(data));
       setleftState(leftState => !leftState);
     }
-  }```
+  }
+  ```
