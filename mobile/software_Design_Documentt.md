@@ -21,7 +21,7 @@ Before starting the design of the front part of the mobile app, we had to take i
   -  we also thought about showing the image we collid with (in the end we were not able to implement it in time).
  
  So with those constrain taken in account we decided to first create the design on figma (a collaborative app like google doc, to create desings).
- ![Figma](assets/figma?raw=true "Figma")
+ ![Figma](assets/figma.png?raw=true "Figma")
  
  To answer the first two needs we decided to create a button that will activate one or the other part, and will send a message to the back end about the change of state., and decided to add a place to draw.
  
