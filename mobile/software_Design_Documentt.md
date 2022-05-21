@@ -55,7 +55,7 @@ Before starting the design of the front part of the mobile app, we had to take i
     sizeMaxY = (tempHightY) - (tempLowY)
     size1pX = sizeMaxX / 300;
     size1pY = sizeMaxY / 400;
-    ```
+```
 
 We also had to check if some numbers were negative as our axis to draw were only positive. If there is a negative number we will then add the obasolute value to all coordinates.
 ```    if (tempLowX < 0)
@@ -88,13 +88,13 @@ To receive all those data, we use a socket connexion and created and infinite lo
         console.log(err);
       });
   }
-  ```
+ ```
 
 To draw the obstacles we are in the same function as the one drawing the path as we apply the same multiplying factor to make the coordinates adapt to the size of the map, and we draw thanks to the circle option of the svg library
 ```cx = (element[0] + makePosX) / size1pX
         cy = (element[1] + makePosY) / size1pY
         temp1.push(<Circle cx={cx.toString()} cy={cy.toString()} r="5" stroke="black" strokeWidth="2" />);
-        ```
+```
         
 We get the obstacles via a socket call that the back end sends.
 
