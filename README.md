@@ -23,21 +23,23 @@ In this documentation, any mention of "WallE" refers to our WallE robot.
 * [Backend](backend/index.md)
 
 # Architecture
-The architecture of the entire system can be divided into three major components `Backend`, `Mobile` and `WallE`. These major components, in turn, have their own major sub-components. This chapter will provide an overview of each major component along with links to more detailed implementations.
+The architecture of the entire system can be divided into three major components `Backend`, `Mobile` and `WallE`. These major components, in turn, have their own sub-components. This chapter will provide an overview of each major component along with links to more detailed implementations. `LINK TO FIGURE`
 
 ### Major Components
 ## WallE
-...
+WallE or Mower is the major component that is considered the physical unit. This hosts everything for controlling low level movements, collision(obstacle) events, calculating relative position, etc. WallE has three sub components, each to take care of the low level requirements needed. WallE has two communication channel with the [Backend](#backend), HTTP requests and a socket connection. 
 
 See [WallE](wallE/index.md) for implementation details.
 
 ## Backend
-...
+The backend or 'Backend' is the major component that handles data correction calculations, data storage, collision events handling, mediator between [WallE](#walle) and [Mobile](#mobile), path generation, etc. 
+Its main application is a REST API which exposes endpoints for both [WallE](#walle) and [Mobile](#mobile). However, attached to the same appliation is a socker server which is also exposed.
+The backend uses Google's [Cloud Firestore](https://firebase.google.com/docs/firestore) and [Cloud Storage](https://cloud.google.com/storage) for data storage. 
 
 See [Backend](backend/index.md) for implementation details.
 
 ## Mobile
-...
+The app or 'Mobile' is the major component that deals with user interaction and interface. It displays visual feedback of [WallE](#walle)'s position and collision events. Mobile also provides an [WallE](#walle) control interface for manual/automatic control over [WallE](#walle).
 
 See [Mobile](mobile/index.md) for implementation details.
 
