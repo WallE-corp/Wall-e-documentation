@@ -4,14 +4,15 @@
 * [Introduction](#introduction)
 * [Architecture](#architecture)
 * [Mid-Level Requirements Breakdown](#mid-level-requirements-breakdown)
-* [REST API Endpoints](rest_api_endpoints.md)
-* [SocketIO](socket_connection.md)
+* [Node Application](node_application.md)
 * [Database](database.md)
 * [Testing](testing.md)
 
 ## Introduction
 
 ## Architecture
+![Backend Architecture](../assets/backend_software_design.svg)
+
 
 ## Mid-Level Requirements Breakdown
 Breakdown the high-level requirements into what is specifically required. Low-level requirements can be detailed elsewhere.
